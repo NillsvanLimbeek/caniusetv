@@ -1,0 +1,38 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.button {
+		@apply py-2 px-3 rounded bg-amber-300 font-light;
+	}
+
+	.button-outline {
+		@apply py-2 px-3 rounded border border-amber-300 bg-transparent text-white font-light;
+	}
+
+	.add-rule__heading {
+		@apply w-full text-xl font-light text-gray-600 border-b border-gray-600 my-3;
+	}
+
+	.absolute-center {
+		@apply left-[50%] -translate-x-[50%];
+	}
+
+	.toast-error {
+		@apply border border-red-300 text-red-300;
+	}
+
+	.toast-succes {
+		@apply border border-green-400 text-green-400;
+	}
+
+	.input-field__error {
+		@apply border border-red-600 focus:ring-red-400 !important;
+	}
+
+	.rules-list__title {
+		@apply flex justify-center rounded-md p-2 mb-2 text-xl font-light;
+	}
+}
